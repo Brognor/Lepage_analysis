@@ -24,7 +24,7 @@ for radius in tqdm(radius):
             plt.xlim(0,20*n)
             plt.legend()
             plt.title(f"eigenfunction with n={n} and radius of short interaction = {radius}")
-            plt.savefig(f"figures/radial_well/eigenfunc_n={n}_radius={radius}.png")
+            plt.savefig(f"pictures/radial_well/eigenfunc_n={n}_radius={radius}.png")
             plt.close()
         
     f.write("\n#############################################################\n")
