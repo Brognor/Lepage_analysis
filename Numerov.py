@@ -14,7 +14,7 @@ def normalize(grid, func): #return the normalized eigenfunction
 
     func_2=np.multiply(func,func)
     norm=int.trapezoid(func_2,grid)
-    return func/norm
+    return func/np.sqrt(norm)
 
 
 
@@ -156,7 +156,7 @@ class potentials: #class containig some known potentials
 class Numerov_algorithm: #here we define algorithm that perform the Numerov algorithm in the context of the Schrodinger equation
     """There are many ways in which one can find the correct energy, here we consider the method that find energy imposing continuity of first derivative."""
     
-    def radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,accuracy=10**(-5),dy=10**(-120)): 
+    def radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,accuracy=10**(-5),dy=10**(-150),verbose=False): 
         """grid is the grid on which apply the algorithm,  
         step is the grid step  
         m is the mass
@@ -165,7 +165,8 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
         E_min is the minimal value for the energy, E_max is the maximal value for the energy
         potential must be an array containing the value of the potential over the grid, we do not compute it inside the algorithm because it is energy independent, so if we put 
         the algorithm in a for cycle we avoid unuseful computation, of course the grid must be the same and we must put attention over this fact.
-        accuracy is the uncertainity on the energy determined"""
+        accuracy is the uncertainity on the energy determined
+        verbose make the function print how it's working on terminal"""
 
 
         if E_max<E_min :
@@ -185,7 +186,8 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
                 index_inv=0
                 energy=(E_max+E_min)/2.
-                print("trying energy eigenvalue ",energy)
+                if verbose:
+                    print("trying energy eigenvalue ",energy)
                 node_counter=1
 
 
@@ -227,11 +229,13 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
                 
                 
                 if node_counter<node_number: #we need now to update our interval of interesting energies, before we use the node number
-                    print("too little nodes")
+                    if verbose:
+                        print("too little nodes")
                     E_min=energy
                     continue
                 elif node_counter>node_number:
-                    print("too many nodes")
+                    if verbose:
+                        print("too many nodes")
                     E_max=energy
                     continue
 
@@ -268,7 +272,7 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
     ##########################################################################################################################################################
 
     @njit
-    def fast_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,accuracy=10**(-6),dy=10**(-120)): 
+    def fast_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,accuracy=10**(-6),dy=10**(-150),verbose=False): 
         """the same function as before but defined using numba (some minor changes must be done to use it)"""
         #file=open("error.txt","w")
 
@@ -293,7 +297,8 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
                 energy=(E_max+E_min)/2.
                 node_counter=1
-                print("trying energy eigenvalue ",energy)
+                if verbose:
+                    print("trying energy eigenvalue ",energy)
 
 
                 #now we find the classical inversion point
@@ -339,12 +344,14 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
                 
                 if node_counter<node_number: #we need now to update our interval of interesting energies, before we use the node number
                     E_min=energy
-                    print("too little nodes")
+                    if verbose:
+                        print("too little nodes")
                     continue
                     
                 elif node_counter>node_number:
                     E_max=energy
-                    print("too many nodes")
+                    if verbose:
+                        print("too many nodes")
                     continue
 
                 elif node_counter==node_number: #if the node number is right we proceed with backward integration
@@ -385,7 +392,7 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
 
 
-    def log_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,l=0,accuracy=10**(-5),dy=10**(-120)): 
+    def log_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,l=0,accuracy=10**(-5),dy=10**(-150),verbose=False): 
         """grid is the grid on which apply the algorithm, a good idea is to make it go from negative to positive values, we will transofrm it
         step is the grid step  
         m is the mass
@@ -417,7 +424,8 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
                 index_inv=0
                 energy=(E_max+E_min)/2.
-                print("trying energy eigenvalue ",energy)
+                if verbose:
+                    print("trying energy eigenvalue ",energy)
 
 
                 #now we find the classical inversion point
@@ -457,11 +465,13 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
                 
                 
                 if node_counter<node_number: #we need now to update our interval of interesting energies, before we use the node number
-                    print("too little nodes")
+                    if verbose:
+                        print("too little nodes")
                     E_min=energy
                     continue
                 elif node_counter>node_number:
-                    print("too many nodes")
+                    if verbose:
+                        print("too many nodes")
                     E_max=energy
                     continue
 
@@ -496,7 +506,7 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
 
     @njit
-    def log_fast_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,l=0,accuracy=10**(-6),dy=10**(-120)): 
+    def log_fast_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,l=0,accuracy=10**(-6),dy=10**(-150),verbose=False): 
         """the same function as before but defined using numba (some minor changes must be done to use it)"""
         #file=open("error.txt","w")
 
@@ -521,7 +531,8 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
                 energy=(E_max+E_min)/2.
                 node_counter=1
-                print("trying energy eigenvalue ",energy)
+                if verbose:
+                    print("trying energy eigenvalue ",energy)
 
 
                 #now we find the classical inversion point
@@ -567,12 +578,14 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
                 
                 if node_counter<node_number: #we need now to update our interval of interesting energies, before we use the node number
                     E_min=energy
-                    print("too little nodes")
+                    if verbose:
+                        print("too little nodes")
                     continue
                     
                 elif node_counter>node_number:
                     E_max=energy
-                    print("too many nodes")
+                    if verbose:
+                        print("too many nodes")
                     continue
 
                 elif node_counter==node_number: #if the node number is right we proceed with backward integration
