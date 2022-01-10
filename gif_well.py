@@ -20,7 +20,7 @@ for radius in tqdm(radius):
     coulomb_eigenfunc=nu.normalize(grid,coulomb_eigenfunc)
     
     plt.figure()
-    filename=f'figures/gif/{numerfig}.png'
+    filename=f'pictures/gif/{numerfig}.png'
     filenames.append(filename)
     plt.plot(grid,well_potential,label=' well potential')
     plt.plot(grid, eigenfunc, label='coulomb plus well eigenfunction')
@@ -37,7 +37,7 @@ images= []
 for filename in filenames:
     images.append(imageio.imread(filename))
 
-imageio.mimsave('figures/gif/radialweel_change5.gif', images,duration=0.1)
+imageio.mimsave('pictures/gif/radialweel_change5.gif', images,duration=0.1)
 
 filenames = []
 radius=[0.05*i for i in range(0,2000)]
@@ -54,7 +54,7 @@ for radius in tqdm(radius):
     coulomb_eigenfunc=nu.normalize(grid,coulomb_eigenfunc)
     
     plt.figure()
-    filename=f'figures/gif/{numerfig}.png'
+    filename=f'pictures/gif/{numerfig}.png'
     filenames.append(filename)
     plt.plot(grid,well_potential,label=' well potential')
     plt.plot(grid, eigenfunc, label='coulomb plus well eigenfunction')
@@ -70,4 +70,4 @@ images= []
 for filename in filenames:
     images.append(imageio.imread(filename))
 
-imageio.mimsave('figures/gif/radial_well_notitle5.gif', images,duration=0.01)
+imageio.mimsave('pictures/gif/radial_well_notitle5.gif', images,duration=0.01)
