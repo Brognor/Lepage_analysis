@@ -1,7 +1,7 @@
 import Numerov as  nu
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-f=open("test_results/radial_well_coulomb_energy","w")
+f=open("results/radial_well_coulomb_energy","w")
 grid,step=nu.spatial_objects.uniform_grid(0,100,10**6,retstep=True)
 value =-1
 radius=[0.1,0.2,0.3,0.5,0.75,1.0,1.5,2.0]
