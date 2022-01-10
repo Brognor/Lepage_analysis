@@ -1,0 +1,72 @@
+Here radial well potential has  VALUE=-1 and RADIUS==0.1
+
+Energy of the 1S level is -0.5011603832244873, only Coulomb would be -0.5
+Energy of the 2S level is -0.12514472007751465, only Coulomb would be -0.125
+Energy of the 3S level is -0.05559897422790527, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.031267404556274414, only Coulomb would be -0.03125
+Energy of the 5S level is -0.020009279251098633, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==0.2
+
+Energy of the 1S level is -0.5083086490631104, only Coulomb would be -0.5
+Energy of the 2S level is -0.12602448463439941, only Coulomb would be -0.125
+Energy of the 3S level is -0.05585789680480957, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.031377553939819336, only Coulomb would be -0.03125
+Energy of the 5S level is -0.0200650691986084, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==0.3
+
+Energy of the 1S level is -0.5256993770599365, only Coulomb would be -0.5
+Energy of the 2S level is -0.12809443473815918, only Coulomb would be -0.125
+Energy of the 3S level is -0.056463003158569336, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.031632184982299805, only Coulomb would be -0.03125
+Energy of the 5S level is -0.02019524574279785, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==0.5
+
+Energy of the 1S level is -0.6032259464263916, only Coulomb would be -0.5
+Energy of the 2S level is -0.13617682456970215, only Coulomb would be -0.125
+Energy of the 3S level is -0.05875897407531738, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.03258204460144043, only Coulomb would be -0.03125
+Energy of the 5S level is -0.0206758975982666, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==0.75
+
+Energy of the 1S level is -0.777482271194458, only Coulomb would be -0.5
+Energy of the 2S level is -0.14851927757263184, only Coulomb would be -0.125
+Energy of the 3S level is -0.0620419979095459, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.0339052677154541, only Coulomb would be -0.03125
+Energy of the 5S level is -0.021338224411010742, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==1.0
+
+Energy of the 1S level is -0.9725439548492432, only Coulomb would be -0.5
+Energy of the 2S level is -0.15512967109680176, only Coulomb would be -0.125
+Energy of the 3S level is -0.06365418434143066, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.034536123275756836, only Coulomb would be -0.03125
+Energy of the 5S level is -0.021647214889526367, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==1.5
+
+Energy of the 1S level is -1.2468302249908447, only Coulomb would be -0.5
+Energy of the 2S level is -0.15678048133850098, only Coulomb would be -0.125
+Energy of the 3S level is -0.06404900550842285, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.03469204902648926, only Coulomb would be -0.03125
+Energy of the 5S level is -0.021724462509155273, only Coulomb would be -0.02
+
+#############################################################
+Here radial well potential has  VALUE=-1 and RADIUS==2.0
+
+Energy of the 1S level is -1.3805930614471436, only Coulomb would be -0.5
+Energy of the 2S level is -0.17403101921081543, only Coulomb would be -0.125
+Energy of the 3S level is -0.0694119930267334, only Coulomb would be -0.05555555555555555
+Energy of the 4S level is -0.0369107723236084, only Coulomb would be -0.03125
+Energy of the 5S level is -0.022837400436401367, only Coulomb would be -0.02
+
+#############################################################
