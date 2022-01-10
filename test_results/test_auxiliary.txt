@@ -1,0 +1,23 @@
+The auxiliary function g gfor mass=1, E=0 and the Coulomb potential in r=2 is -1.0
+The auxiliary function g for mass=1, E=0 and the square well potential in r=2 is -24
+the grid is [ 1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]
+the step is 1.0
+The auxiliary function g for mass=1, E=0 and the Coulomb potential along the grid is [-2.         -1.         -0.66666667 -0.5        -0.4        -0.33333333
+ -0.28571429 -0.25       -0.22222222 -0.2       ]
+The auxiliary function f for mass=1, E=0 and the Coulomb potential along the grid is [0.83333333 0.91666667 0.94444444 0.95833333 0.96666667 0.97222222
+ 0.97619048 0.97916667 0.98148148 0.98333333]
+The auxiliary function  g for mass=1, E=0 and the square_wellpotential along the grid is [ 0. -8. -8. -8. -8. -8. -8.  0.  0.  0.]
+The auxiliary function  f for mass=1, E=0 and the square_well potential along the grid is [1.         0.33333333 0.33333333 0.33333333 0.33333333 0.33333333
+ 0.33333333 1.         1.         1.        ]
+LOGARITHMIC GRID CASE
+now the grid is [0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]
+the log grid is [1.10517092 1.22140276 1.34985881 1.4918247  1.64872127 1.8221188
+ 2.01375271 2.22554093 2.45960311 2.71828183]
+the step is 0.1
+The auxiliary function g for mass=1, E=0 and the Coulomb potential along the grid is [-1.80967484 -1.63746151 -1.48163644 -1.34064009 -1.21306132 -1.09762327
+ -0.99317061 -0.89865793 -0.81313932 -0.73575888]
+The auxiliary function f for mass=1, E=0 and the Coulomb potential along the grid is [0.99849194 0.99863545 0.9987653  0.9988828  0.99898912 0.99908531
+ 0.99917236 0.99925112 0.99932238 0.99938687]
+The auxiliary function  gfor mass=1, E=0 and the sqaure_wellpotential along the grid is [ 0.  0.  0.  0.  0.  0. -8. -8. -8. -8.]
+The auxiliary function  f for mass=1, E=0 and the square_well potential along the grid is [1.         1.         1.         1.         1.         1.
+ 0.99333333 0.99333333 0.99333333 0.99333333]
