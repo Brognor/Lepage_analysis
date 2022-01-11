@@ -15,3 +15,5 @@ pictures is a folder containing many graphs
 test_results is a folder containg results of text.py file
 
 results is the folder containg results obtained for the project
+
+delta_coulomb.py contain the test of the potential -1/r-delta(r), as delta function we used a smeared delta function, what we have done is to use different value of a in the gaussain representation of the delta and see the 1S resulting energy eigenvalue.
