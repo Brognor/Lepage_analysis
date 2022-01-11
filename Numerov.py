@@ -55,10 +55,7 @@ class spatial_objects:  #functions that gives back grid-like elements
 
     @njit 
     def logarithmic_grid(uniform_grid,Z=1,r_0=1):
-        if 0 in uniform_grid:
-            raise ValueError("0 in uniform_grid give -inf in log grid")
-        else:
-            return r_0/Z*np.exp(uniform_grid)
+        return r_0/Z*np.exp(uniform_grid)
         
 
 class auxiliary_functions: #in this class we define functions that enter in iteration of Numerov algorithm for Schrodinger equation.
@@ -97,6 +94,10 @@ class potentials: #class containig some known potentials
     def Coulomb(r,alpha=1):
         r=np.reciprocal(r)
         return np.multiply(r,-alpha)
+
+    @njit
+    def dirac_delta_smeared(grid,a):
+        return 1/(a**3*np.sqrt(2*np.pi)**3)*np.exp(-np.multiply(grid,grid)/(2*a**2)) #this succession for a small a goes to delta
 
 
 
@@ -393,7 +394,7 @@ class Numerov_algorithm: #here we define algorithm that perform the Numerov algo
 
 
     def log_radial_numerov(grid,step,m,n_energy,E_min,E_max,potential,l=0,accuracy=10**(-5),dy=10**(-150),verbose=False): 
-        """grid is the grid on which apply the algorithm, a good idea is to make it go from negative to positive values, we will transofrm it
+        """grid is the grid on which apply the algorithm, a good idea is to make it go from negative to positive values, it must be inserted as a log grid
         step is the grid step  
         m is the mass
         l is the angular momentum number,

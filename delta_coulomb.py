@@ -21,7 +21,7 @@ plt.title(r'1S eigenfunction for a potential $-\frac{1}{r}-\delta(r)$')
 plt.xlim(0,4.5)
 plt.ylim(0,3)
 plt.legend(fontsize=9)
-plt.savefig("pictures/delta/1S_eigenfunctions")
+plt.savefig("pictures/delta/1S_eigenfunctions.png")
 
 
 

@@ -2,7 +2,7 @@ import Numerov as  nu
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import imageio
-f=open("test_results/radial_well_coulomb_energy","w")
+import os
 grid,step=nu.spatial_objects.uniform_grid(0,100,10**4,retstep=True)
 value =-1
 coulomb=coulomb=nu.potentials.Coulomb(grid)
@@ -20,7 +20,7 @@ for radius in tqdm(radius):
     coulomb_eigenfunc=nu.normalize(grid,coulomb_eigenfunc)
     
     plt.figure()
-    filename=f'pictures/gif/{numerfig}.png'
+    filename=f'pictures/gif/well/{numerfig}.png'
     filenames.append(filename)
     plt.plot(grid,well_potential,label=' well potential')
     plt.plot(grid, eigenfunc, label='coulomb plus well eigenfunction')
@@ -37,7 +37,10 @@ images= []
 for filename in filenames:
     images.append(imageio.imread(filename))
 
-imageio.mimsave('pictures/gif/radialweel_change5.gif', images,duration=0.1)
+imageio.mimsave('pictures/gif/well/radialweel_change5.gif', images,duration=0.1)
+
+for filename in set(filenames):
+    os.remove(filename)
 
 filenames = []
 radius=[0.05*i for i in range(0,2000)]
@@ -54,7 +57,7 @@ for radius in tqdm(radius):
     coulomb_eigenfunc=nu.normalize(grid,coulomb_eigenfunc)
     
     plt.figure()
-    filename=f'pictures/gif/{numerfig}.png'
+    filename=f'pictures/gif/well/{numerfig}.png'
     filenames.append(filename)
     plt.plot(grid,well_potential,label=' well potential')
     plt.plot(grid, eigenfunc, label='coulomb plus well eigenfunction')
@@ -70,4 +73,6 @@ images= []
 for filename in filenames:
     images.append(imageio.imread(filename))
 
-imageio.mimsave('pictures/gif/radial_well_notitle5.gif', images,duration=0.01)
+imageio.mimsave('pictures/gif/well/radial_well_notitle5.gif', images,duration=0.01)
+for filename in set(filenames):
+    os.remove(filename)
