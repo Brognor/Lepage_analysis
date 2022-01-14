@@ -11,8 +11,8 @@ a=[10./i for i in range(1,100)]
 filenames = []
 numerfig=1
 for a in tqdm(a):
-    dirac=-nu.potentials.dirac_delta_smeared(grid, a)
-    potential=coulomb+dirac
+    dirac=-nu.potentials.smeared_dirac_delta(grid, a)
+    potential=coulomb+dirac*a**2
 
     energy,eigenfunc=nu.Numerov_algorithm.log_fast_radial_numerov(grid,step,1,1,-100,0,potential)
     eigenfunc=nu.normalize(grid,eigenfunc)
@@ -51,7 +51,7 @@ a=[10./i for i in range(1,100)]
 
 numerfig=1000
 for a in tqdm(a):
-    dirac=-nu.potentials.dirac_delta_smeared(grid, a)
+    dirac=-nu.potentials.smeared_dirac_delta(grid, a)*a**2
     potential=coulomb+dirac
 
     energy,eigenfunc=nu.Numerov_algorithm.log_fast_radial_numerov(grid,step,1,1,-100,0,potential)

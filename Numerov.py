@@ -107,19 +107,19 @@ class potentials: #class containig some known potentials
     
 
     @njit
-    def dirac_delta_smeared(grid,a):
+    def smeared_dirac_delta(grid,a):
         prefactor=1/(a**3*np.sqrt(2*np.pi)**3)
         return prefactor*np.exp(-np.multiply(grid,grid)/(2*a**2)) #this succession for a small a goes to delta
     
     @njit 
-    def laplacian_delta_smeared(grid,a):
+    def laplacian_smeared_delta(grid,a):
         prefactor=1/(a**3*np.sqrt(2*np.pi)**3)
         exp=np.exp(-np.multiply(grid,grid)/(2*a**2))
         return prefactor*(np.multiply(grid,grid)/a**4-3/a**2)*exp
     
     
     def effective_potential(r,a,c,d,alpha=1):
-        return potentials.Coulomb_regulated(r,a,alpha=alpha)+c*potentials.dirac_delta_smeared(r,a)*a**2+d*potentials.laplacian_delta_smeared(r,a)*a**4
+        return potentials.Coulomb_regulated(r,a,alpha=alpha)+c*potentials.smeared_dirac_delta(r,a)*a**2+d*potentials.laplacian_smeared_delta(r,a)*a**4
 
 
 

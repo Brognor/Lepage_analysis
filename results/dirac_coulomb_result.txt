@@ -1,19 +1,17 @@
-We use succession of gaussians as delta approximation chossing as potential Coulomb(r)-delta(r)
+We use succession of gaussians as delta approximation chossing as potential -1/r-1.0*delta(r)
 With a=1.0 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5276240408420563
-With a=0.5 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.589703768491745
-With a=0.3333333333333333 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.6615929305553436
-With a=0.25 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.7470943033695221
-With a=0.2 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.8565880358219147
-With a=0.16666666666666666 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -1.0063417255878448
-With a=0.14285714285714285 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -1.2220628559589386
-With a=0.125 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -1.5442140400409698
-With a=0.1111111111111111 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -2.034122496843338
-With a=0.1 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -2.778821438550949
-With a=0.09090909090909091 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -3.8924016058444977
-With a=0.08333333333333333 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -5.513422936201096
-With a=0.07692307692307693 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -7.800024002790451
-With a=0.07142857142857142 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -10.925153642892838
-With a=0.06666666666666667 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -15.072720497846603
-With a=0.0625 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -20.435262471437454
-
-
+With a=0.5 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5204193294048309
+With a=0.3333333333333333 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5138449370861053
+With a=0.25 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5097277462482452
+With a=0.2 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5071394145488739
+With a=0.16666666666666666 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5054391920566559
+With a=0.14285714285714285 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5042724311351776
+With a=0.125 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5034409463405609
+With a=0.1111111111111111 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5028285086154938
+With a=0.1 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5023650825023651
+With a=0.09090909090909091 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5020074546337128
+With a=0.08333333333333333 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5017243325710297
+With a=0.07692307692307693 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5014963448047638
+With a=0.07142857142857142 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5013115704059601
+With a=0.06666666666666667 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5011580884456635
+With a=0.0625 in the gaussian succession, we obtain for the first energy eigenvalue with a potential coulomb-delta: -0.5010299384593964
