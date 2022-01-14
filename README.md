@@ -19,3 +19,7 @@ results is the folder containg results obtained for the project
 delta_coulomb.py contain the test of the potential -1/r-delta(r), as delta function we used a smeared delta function, what we have done is to use different value of a in the gaussain representation of the delta and see the 1S resulting energy eigenvalue.
 
 delta.py plot many representations of our delta function with different a
+
+delta_1st_order fit find results for a dirac delta plus coulomb potential approxiamted at first order, result of this are in results
+
+c_delta_with_a find results for a regulated coulomb plus a smeared delta potential fitting the best value of c, results are found in results
