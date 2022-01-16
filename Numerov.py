@@ -119,7 +119,7 @@ class potentials: #class containig some known potentials
     
     
     def effective_potential(r,a,c,d,alpha=1):
-        return potentials.Coulomb_regulated(r,a,alpha=alpha)+c*potentials.smeared_dirac_delta(r,a)*a**2+d*potentials.laplacian_smeared_delta(r,a)*a**4
+        return potentials.Coulomb_regulated(r,a,alpha=alpha)+np.multiply(c*a**2,potentials.smeared_dirac_delta(r,a))+np.multiply(d*a**4,potentials.laplacian_smeared_delta(r,a))
 
 
 
