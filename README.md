@@ -31,4 +31,4 @@ effective_fit perform the search for best values of c and d that minimize square
 
 effective_low perfeorm the search for best value of c and d that makes low energy matching
 
-
+operator_expectation compare energy, squared eigenfunction in the origin and expected momentum to the fourth for data and effective case
