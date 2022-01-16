@@ -8,9 +8,12 @@ radial_well.py is a program finding the energy for various radius and energy lev
 
 gif.py contain the program that create gif of evolution of the eigenfunction with increasing radius of radial well potential
 
-.gif file are the gif file
 
-pictures is a folder containing many graphs
+pictures is a folder containing many graph, in particular:
+	pictures of wavefunctions for diffrent potentials
+	potentials graphs
+	final resullt of relative energy errors graph
+	gif 
 
 test_results is a folder containg results of text.py file
 
@@ -23,3 +26,9 @@ delta.py plot many representations of our delta function with different a
 delta_1st_order fit find results for a dirac delta plus coulomb potential approxiamted at first order, result of this are in results
 
 c_delta_with_a find results for a regulated coulomb plus a smeared delta potential fitting the best value of c, results are found in results
+
+effective_fit perform the search for best values of c and d that minimize square error
+
+effective_low perfeorm the search for best value of c and d that makes low energy matching
+
+

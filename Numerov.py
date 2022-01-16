@@ -16,9 +16,9 @@ def normalize(grid, func): #return the normalized eigenfunction
     norm=int.trapezoid(func_2,grid)
     return func/np.sqrt(norm)
 
-def function_in_origin(grid,eigenfunc):
+def function_in_origin(grid,eigenfunc): #the argument is the reduced radial eigenfunction
     eigenfunc_norm= normalize(grid,eigenfunc)
-    return(eigenfunc_norm[1]*grid[1])**2
+    return(eigenfunc_norm[1]/grid[1])**2
 
 
 
