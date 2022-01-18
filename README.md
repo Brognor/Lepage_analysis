@@ -30,8 +30,7 @@ c_delta_with_a find results for a regulated coulomb plus a smeared delta potenti
 effective_fit perform the search for best values of c and d that minimize square error
 
 effective_low perfeorm the search for best value of c and d that makes low energy matching
-<<<<<<< HEAD
+
 
 operator_expectation compare energy, squared eigenfunction in the origin and expected momentum to the fourth for data and effective case
-=======
->>>>>>> 2a2ad02a2600b6787dd9fb6e38441618b72cc0b5
+
