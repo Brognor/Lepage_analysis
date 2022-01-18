@@ -8,7 +8,7 @@ plt.rcParams['text.usetex'] = True
 for a in range(1,17,1):
     a=1/a
     
-    delta=nu.potentials.dirac_delta_smeared(grid,a)
+    delta=nu.potentials.smeared_dirac_delta(grid,a)
     plt.plot(grid,delta,label=f'a={a}')
 
 plt.xlim(0,0.4)
