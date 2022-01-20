@@ -10,10 +10,10 @@ gif.py contain the program that create gif of evolution of the eigenfunction wit
 
 
 pictures is a folder containing many graph, in particular:
-	pictures of wavefunctions for diffrent potentials
-	potentials graphs
-	final resullt of relative energy errors graph
-	gif 
+	*pictures of wavefunctions for diffrent potentials
+	*potentials graphs
+	*final resullt of relative energy errors graph
+	*gif 
 
 test_results is a folder containg results of text.py file
 
@@ -30,10 +30,11 @@ c_delta_with_a find results for a regulated coulomb plus a smeared delta potenti
 effective_fit perform the search for best values of c and d that minimize square error
 
 effective_low perfeorm the search for best value of c and d that makes low energy matching
-<<<<<<< HEAD
-=======
 
->>>>>>> 79fbb0684134a63b752a7cd7f61709852494256f
+energy_graph.py plot data of the project
 
-operator_expectation compare energy, squared eigenfunction in the origin and expected momentum to the fourth for data and effective case
+generate_data.py generates data 
+
+
+p_operator_expectation.py compare energy, squared eigenfunction in the origin and expected momentum to the fourth for data and effective case
 
