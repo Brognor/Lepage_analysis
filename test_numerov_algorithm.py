@@ -40,9 +40,9 @@ plt.show()
 grid,step=nu.spatial_objects.uniform_grid(-50,6,10**6,retstep=True)
 grid=nu.spatial_objects.logarithmic_grid(grid)
 coulomb=nu.potentials.Coulomb(grid)
-nu.Numerov_algorithm.log_radial_numerov(grid, step, 1, 1, -1., 0, coulomb,l=2)
+energy  = nu.Numerov_algorithm.log_radial_numerov(grid, step, 1, 1, -1., 0, coulomb,l=2)[0]
 f.write(f"For the  radial algorithm using radial grid we find for n=1, l=2 energy {energy}\n")
-nu.Numerov_algorithm.log_fast_radial_numerov(grid, step, 1, 1, -1., 0, coulomb,l=2)
+energy= nu.Numerov_algorithm.log_fast_radial_numerov(grid, step, 1, 1, -1., 0, coulomb,l=2)[0]
 f.write(f"For the fast radial algorithm using radial grid we find for n=1, l=2 energy {energy}\n")
 
 
