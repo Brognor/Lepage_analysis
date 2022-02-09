@@ -1,0 +1,10 @@
+For the radial algorithm, radius from 0 to 100, step of 10^-4, the time of execution is 12.472407817840576 seconds
+For the fast radial algorithm, radius from 0 to 100, step of 10^-4 the time of execution is 1.276444911956787 seconds
+The energy eigenvalue for the level S with n=1 is -0.4999990463256836, the theory provide -0.5
+The energy eigenvalue for the level S with n=2 is -0.1249990463256836, the theory provide -0.125
+The energy eigenvalue for the level S with n=3 is -0.055556297302246094, the theory provide -0.05555555555555555
+The energy eigenvalue for the level S with n=4 is -0.031249046325683594, the theory provide -0.03125
+The energy eigenvalue for the level S with n=5 is -0.01999950408935547, the theory provide -0.02
+For the fast radial algorithm, radius from 0 to 100, step of 10^-4, the time of execution in order to find all these values is  1.5432827472686768 seconds
+For the  radial algorithm using radial grid we find for n=1, l=2 energy -0.05554962158203125
+For the fast radial algorithm using radial grid we find for n=1, l=2 energy -0.055556297302246094
