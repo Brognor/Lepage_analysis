@@ -11,7 +11,7 @@ Level 		 Data 		 Effective
 MOMENTUM TO THE FOURTH
 
 Level 		 Data 		 Effective
- 1S	 	 38.516873	71.864757
+ 1S	 	 64.003179	71.864757
  2S	 	 42.707563	27.401977
  3S	 	 11.210705	6.303391
  4S	 	 4.304471	2.425931
@@ -27,3 +27,7 @@ Level 		 Data 		 Effective
  4S 		0.170792  	0.044096
  5S 		0.08099  	0.021047
  6S 		0.044593  	0.011652
+
+
+
+
